@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+:root {
+
+    --laranja: #f7941e;
+    --vermelho: #ed1847;
+    --branco: #ffffff;
+
+    --dosis: 'Dosis', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+}
+
+.corpo {
+    display: grid;
+    grid-template-rows: 186px auto auto;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 210px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-image: url(../img/cabecalho-428.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    justify-items: center;
+}
+
+.cabecalho__menu, .cabecalho__ajuda {
+    padding: 36px;
+}
+
+.cabecalho__logo {
+    align-self: center;
+    width: 150px;
+}
+
+.principal {
+    display: grid;
+    height: 100vh;
+    background-color: var(--branco);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.principal__sessoes {
+    display: grid;
+    padding: 16px;
+}
+
+.principal__link {
+    border-radius: 16px;
+    width: 83vw;
+    height: 130px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 16px;
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.principal__link--cobertura {
+    background-image: url(../img/mapa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.principal__link--administrativo {
+    background-image: url(../img/administrativo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.principal__link--suporte {
+    background-image: url(../img/suporte-tecnico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.principal__link--financeiro {
+    background-image: url(../img/financeiro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.principal__link--duvidas {
+    background-image: url(../img/duvidas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
